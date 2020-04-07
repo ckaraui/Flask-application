@@ -5,8 +5,7 @@ from flask_jwt import JWT
 from security import authenticate, identity
 from resources.user import UserRegister
 from resources.item import Item, ItemList
-from resources.store import Store, StoreList #it is important to import stor ie the name of
-# tables to be seen by sqlalchemy and can create them because sqlalchemy create tables that it sees only
+from resources.store import Store, StoreList 
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
